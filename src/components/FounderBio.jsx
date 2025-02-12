@@ -4,7 +4,7 @@ import founderImg from "../assets/founderImg.png";
 function FounderBio() {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
- 
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -60,8 +60,8 @@ function FounderBio() {
           <p
             className="absolute bottom-0 hidden lg:block lg:mt-0 mt-[2.4375rem] w-[13.5rem] h-[2.6875rem] text-[#546660] 
             font-archivo text-[0.8347rem] font-normal leading-[130.238%] tracking-[0.0084rem]
-            lg:leading-[130.238%] lg:h-auto   lg:tracking-[clamp(0.01013rem,1.2vw,0.019rem)]
-            lg:text-[clamp(1.01456rem,1.5vw,1.90225rem)]
+            lg:leading-[130.238%] lg:h-auto lg:tracking-[clamp(0.009013rem,1vw,0.014rem)]
+            lg:text-[clamp(0.41775rem,1.5vw,2rem)]
             lg:w-[9.88888rem] mac:w-[12.36113rem] lap:w-[13.19163rem] xl:w-[13.90625rem] 2xl:w-[14.83331rem] 3xl:w-[18.54169rem]
           
           "

@@ -40,9 +40,9 @@ function Footer() {
           </svg>
         </div>
 
-        <div className='flex flex-row  md:space-x-[10rem] mt-[3.55rem] justify-between items-center md:items-stretch md:text-center md:ml-auto'>
-                <div className="w-[5.29744rem] h-[5.229rem] mac:w-[5.78706rem] lg:w-auto space-y-3 flex flex-col">
-                    <div className="text-orange-500 text-[0.86681rem] lg:text-[clamp(0.73931rem,1.2vw,1.38625rem)] font-bold font-title leading-normal mb-[0.43rem] md:mb-0 md:mt-1">Socials</div>
+        <div className='flex flex-row  md:space-x-[10rem] mt-[3.55rem] lg:mt-[5rem] justify-between items-center md:items-stretch md:text-center md:ml-auto'>
+                <div className="w-[5.29744rem] h-[5.229rem] mac:w-[5.78706rem] lg:w-auto  space-y-2  lg:space-y-2 flex flex-col">
+                    <div className="text-orange-500 text-[0.86681rem] lg:text-[clamp(0.53931rem,1.2vw,1.38625rem)] font-bold font-title leading-normal mb-[0.43rem] md:mb-0 md:mt-1">Socials</div>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white text-[0.743rem] lg:text-[clamp(0.59256rem,1.1vw,1.11113rem)] font-normal font-title leading-normal no-underline hover:underline">Instagram</a>
                     <a href="https://www.facebook.com/thebrightlayer" target="_blank" rel="noopener noreferrer" className="text-white text-[0.743rem] lg:text-[clamp(0.59256rem,1.1vw,1.11113rem)] font-normal font-title leading-normal no-underline hover:underline">Facebook</a>
                     <a href="https://x.com/thebrightlayers" target="_blank" rel="noopener noreferrer" className="text-white text-[0.743rem] lg:text-[clamp(0.59256rem,1.1vw,1.11113rem)] font-normal font-title leading-normal no-underline hover:underline">Twitter</a>
@@ -50,8 +50,8 @@ function Footer() {
                 </div>
 
 
-                <div className='w-[7.54175rem] lg:w-auto h-auto space-y-3 flex flex-col'>
-                <div className="text-orange-500 text-[0.86681rem] lg:text-[clamp(0.73931rem,1.2vw,1.38625rem)] font-bold font-title leading-normal ">Connect With Us</div>
+                <div className='w-[7.54175rem] lg:w-auto h-[5.229rem] md:h-auto space-y-2 lg:space-y-2  flex flex-col'>
+                <div className="text-orange-500 text-[0.86681rem] lg:text-[clamp(0.53931rem,1.2vw,1.38625rem)] font-bold font-title leading-normal mb-[0.43rem] md:mb-0  ">Connect With Us</div>
                 <a href="tel:+919546898080" className="text-white text-[0.743rem] lg:text-[clamp(0.59256rem,1.1vw,1.11113rem)] font-normal font-title leading-normal no-underline hover:underline">+91 9546898080</a>
                 <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=thebrightlayersmedia@gmail.com" className="text-white text-[0.743rem] lg:text-[clamp(0.59256rem,1.1vw,1.11113rem)] font-normal font-title leading-normal no-underline hover:underline">brightlayersmail.com</a>
                 </div>
@@ -71,15 +71,15 @@ function Footer() {
 
 
        <div className='hidden md:flex flex-row mx-auto w-[95%] mt-[5.5rem] relative '>
-                  <div className='md:absolute bottom-3  lg:left-20 mac:left-24 2xl:left-32 3xl:left-36 w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] font-normal leading-normal font-title items-center text-white
+                  <div className='md:absolute bottom-3 xl:bottom-4  lg:left-20 mac:left-24 2xl:left-32 3xl:left-36 w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] font-normal leading-normal font-title items-center text-white
                   lg:text-[clamp(0.5185rem,1.1vw,0.97225rem)] lg:h-auto lg:w-auto
                   xl:w-[14.07406rem]'>
                    Copyright @TheBrightLayers
                   </div>  
-                  <div className='md:absolute bottom-3 md:right-4 mac:right-24 2xl:right-12 w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] md:text-[clamp(0.5185rem,1.1vw,0.97225rem)] lg:h-auto font-normal leading-normal font-title items-center text-white'>
+                  <div className='md:absolute bottom-3 md:right-4 xl:bottom-4 mac:right-24 2xl:right-12 w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] md:text-[clamp(0.5185rem,1.1vw,0.97225rem)] lg:h-auto font-normal leading-normal font-title items-center text-white'>
                   Legal
                   </div>
-                  <div className='md:absolute bottom-3 md:right-10 mac:right-8 2xl:right-0 text-right w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] md:text-[clamp(0.5185rem,1.1vw,0.97225rem)] lg:h-auto font-normal leading-normal font-title items-center text-white'>
+                  <div className='md:absolute bottom-3 md:right-10 mac:right-8 xl:bottom-4 2xl:right-0 text-right w-[9.69694rem] h-[1.53575rem] text-[0.44675rem] md:text-[clamp(0.5185rem,1.1vw,0.97225rem)] lg:h-auto font-normal leading-normal font-title items-center text-white'>
                   Site Map
                   </div>
         </div>

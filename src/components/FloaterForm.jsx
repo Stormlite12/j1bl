@@ -14,7 +14,7 @@ function FloaterForm() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const response = await fetch("/api/send-email-enquiry", {
+      const response = await fetch("https://my-brightlayers-worker.bright-layers.workers.dev/api/send-email-enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,7 +96,7 @@ function FloaterForm() {
         <div className="flex flex-col">
           <label className="font-medium mt-[1.77rem] text-[#545454] font-title text-[0.764rem] leading-[0.99506rem] tracking-[0.00763rem]">Brand Website</label>
           <input
-            type="url"
+            type="text"
             value={brand}
               onChange={(e)=>setBrand(e.target.value)}
             className="border-b border-black focus:outline-none focus:border-black bg-transparent py-1"

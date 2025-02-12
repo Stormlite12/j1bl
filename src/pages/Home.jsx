@@ -126,12 +126,6 @@ function Home() {
 
       </div>
       <div className="max-w-[80rem] mx-auto hidden mac:-translate-y-20 md:block">
-  <a
-    href="#examples"
-    className="w-[9.4375rem] h-[1.75rem] float-right text-[#545454] text-xl font-semibold font-title underline leading-relaxed tracking-tight mb-4"
-  >
-    check services
-  </a>
 </div>
 
       <div
@@ -178,13 +172,7 @@ function Home() {
       </div>
 
       <div className="max-w-[80rem] mx-auto hidden mac:-translate-y-20 md:block">
-  <a
-    href="#examples"
-    className="w-[9.4375rem] h-[1.75rem] float-right text-[#545454] text-xl font-semibold font-title underline leading-relaxed tracking-tight mb-4"
-    
-  >
-    check services
-  </a>
+ 
 </div>
 
       <div className="lg:hidden w-full h-auto flex mt-[6rem]" >
@@ -274,7 +262,7 @@ function Home() {
       <InfiniteCarousel />
 
       <div
-        className="md:mt-[9.81rem] mac:mt-[12.27rem] xl:mt-[13.8rem] text-center font-pSans w-full h-[1.3125rem] text-[1.125rem] font-semibold leading-[1.3275rem] tracking-[0.01125rem]
+        className="text-[#303338] md:mt-[9.81rem] mac:mt-[12.27rem] xl:mt-[13.8rem] text-center font-pSans w-full h-[1.3125rem] text-[1.125rem] font-semibold leading-[1.3275rem] tracking-[0.01125rem]
             md:text-[clamp(1.35606rem,1.5vw,2.54263rem)] md:leading-[2.25019rem] md:font-semibold md:tracking-[0.01906rem]"
       >
         Meet Our Founder

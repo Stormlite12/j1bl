@@ -1,12 +1,19 @@
+import { useState } from "react";
+import FloaterForm from "./FloaterForm";
 
 function Features() {
+   const [isFormVisible, setIsFormVisible] = useState(false);
+  
+    const toggleFormVisibility = () => {
+      setIsFormVisible((prev) => !prev);
+    };
   return (
     <div>
       {/* Take the Call section */}
       <div className='flex flex-col items-center mt-20 w-auto'>
         {/* Text and svg */}
         <div className='flex flex-row'>
-          <div className='w-[8.375rem] h-[1.23625rem] text-center text-[#313338] font-pSans text-[1.293rem] font-semibold leading-[114%] tracking-[-0.02588rem]'>Take The Call</div>
+          <div  onClick={toggleFormVisibility} className='w-[8.375rem] h-[1.23625rem] text-center text-[#313338] font-pSans text-[1.293rem] font-semibold leading-[114%] tracking-[-0.02588rem]'>Take The Call</div>
           <div className='text-center mt-[0.15rem] ml-2'>
           <svg
           width="42"
@@ -59,8 +66,29 @@ function Features() {
         </div>
       </div>
 
+        {/* Overlay and Form */}
+        {isFormVisible && (
+      <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+      {/* Form Container */}
+      <div className="relative p-6 rounded-md w-[95%] max-w-sm max-h-[95%] overflow-y-auto no-scrollbar">
+        {/* Close Button */}
+        <button
+          className="absolute top-0 right-6 text-gray-500 hover:text-gray-700"
+          onClick={toggleFormVisibility}
+        >
+          ✖
+        </button>
+        <FloaterForm />
+      </div>
+    </div>
+    
+      )}
+
+      
+
 
       {/* Know About Us Section */}
+      <a href="">
       <div className='flex flex-col items-center mt-14 w-auto'>
         {/* SVG and Text */}
         <div className='flex flex-row'>
@@ -72,13 +100,16 @@ function Features() {
                     <path d="M32 6.26001C33.7208 6.70061 35.2461 7.70141 36.3353 9.10463C37.4245 10.5078 38.0157 12.2337 38.0157 14.01C38.0157 15.7864 37.4245 17.5122 36.3353 18.9154C35.2461 20.3186 33.7208 21.3194 32 21.76" stroke="#F97316" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
-            <div className='w-[9.25rem] h-[1.1875rem] text-[#313338] font-pSans text-center text-[1.293rem] font-semibold leading-[114%] tracking-[-0.02588rem]'>Know About Us</div>
+            <a href="https://bio.site/thebrightlayers"><div className='w-[9.25rem] h-[1.1875rem] text-[#313338] font-pSans text-center text-[1.293rem] font-semibold leading-[114%] tracking-[-0.02588rem]'>Know About Us</div>
+            </a>
         </div>
         {/* Who Are We */}
         <div className='flex justify-center mt-2 w-[9.19175rem] h-[0.72863rem]'>
           <div className='text-[#F97316] text-center font-inter text-[0.625rem] font-medium leading-[0.46919rem]'>WHO ARE WE?</div>
         </div>
       </div>
+      </a>
+      
     </div>
   )
 }

@@ -35,7 +35,7 @@ function BlogSpot() {
     return (
 
 <div className='mt-[6.91rem] mb-[10rem]'>
-<p className="mx-auto text-center font-pSans w-[14.94719rem] h-[1.12506rem] lg:h-[4rem] font-semibold text-[clamp(1.35606rem,1.5vw,2.54263rem)] leading-[1.13794rem] tracking-[0.00963rem]">Blog</p>
+<p className="mx-auto text-center font-pSans w-[14.94719rem] h-[1.12506rem] lg:h-[4rem] font-semibold text-[clamp(1.35606rem,1.5vw,2.54263rem)] leading-[1.13794rem] tracking-[0.00963rem] text-[#303338]">Blog</p>
 <div className='mx-auto flex items-center justify-between mt-[2.57rem] space-x-[1.75rem] overflow-x-scroll no-scrollbar md:overflow-visible'>
     {posts.map((post, index) => (
         <div key={index} className="w-[12.84888rem] h-[15.14rem] 

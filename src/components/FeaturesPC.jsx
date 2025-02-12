@@ -1,12 +1,15 @@
+import { NavLink } from "react-router-dom";
 
 const FeaturesPC = () => {
   return (
     <div className="hidden md:flex flex-row mx-auto justify-center space-x-16">
+      
         {/* Take the call section*/}
+        <NavLink to="/LetsTalk" className="">
         <div className="flex flex-col items-center w-[14.30556rem] h-[6.20369rem] relative group parent -ml-2">
             {/* take the call text */}
             <div className=" w-[9.53706rem] h-[5.09263rem] absolute text-right text-[#303338] text-[2.28831rem] font-semibold font-pSans leading-[2.70025rem] tracking-[0.02288rem]">
-            Take <br /> <span className='un'>The Call</span></div>
+              Take <br /> <span className='un'>The Call</span></div>
             {/* svg and "tea or coffee" section */}
             
             <div className="absolute flex flex-col justify-start left-[12.8125rem] top-[0.625rem] mx-auto">
@@ -57,15 +60,18 @@ const FeaturesPC = () => {
         </div>
         </div>
 
+        </NavLink>
+       
         <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" width="3" height="97" viewBox="0 0 3 97" fill="none">
         <path d="M1.7041 0.81665V96.3722" stroke="black" strokeWidth="1.48148" className="w-0 h-[5.97225rem]"/>
         </svg>
         </div>
         
-        <div className="flex flex-row w-[14.30556rem] h-[6.20369rem] -ml-2">
+        
           {/* Know About Us section*/}
-        <div className="flex flex-row items-center justify-center -mt-0.5 ">
+          <a href="https://bio.site/thebrightlayers"><div className="flex flex-row w-[14.30556rem] h-[6.20369rem] -ml-2">
+             <div className="flex flex-row items-center justify-center -mt-0.5 ">
             {/* svg and "who are you" section */}
             <div className="flex flex-col items-center justify-center space-y-2.5 mr-3">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[2.22225rem] h-[2.22225rem] -ml-6">
@@ -79,9 +85,11 @@ const FeaturesPC = () => {
         </div>
         <div className="w-[10.86113rem] h-[5.09263rem] text-[#313338] font-pSans text-[2.28831rem] font-semibold leading-[2.70025rem] tracking-[0.02288rem]">
             Know <br /> About Us
-        </div>
+        </div> </div>
 
-        </div>
+          </a>
+       
+       
     </div>
   );
 };
