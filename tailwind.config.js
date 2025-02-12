@@ -21,13 +21,13 @@ export default {
         title: ["Lato"],
         pSans: ["Public Sans"],
         inter: ["Inter"],
-        archivo: ["Archivo"]
+        archivo: ["Archivo"],
+        lexend: ["Lexend"]
       },
       transitionDuration: {
         '2000': '2000ms',
       }
     },
   },
-  plugins: [ require('tailwind-scrollbar-hide')],
 }
 
