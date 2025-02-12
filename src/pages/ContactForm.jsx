@@ -20,13 +20,16 @@ const ContactForm = ({ isVisible, onClose }) => {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const response = await fetch("https://my-brightlayers-worker.bright-layers.workers.dev/api/send-email-enquiry", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, contact, service }),
-      });
+      const response = await fetch(
+        "https://my-brightlayers-worker.bright-layers.workers.dev/api/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, contact, service }),
+        }
+      );
       if (response.ok) {
         alert("Details submitted successfully!");
         setName("");
@@ -123,36 +126,46 @@ const ContactForm = ({ isVisible, onClose }) => {
   );
 };
 
+const HoverableDiv = () => {
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
-  const HoverableDiv = () => {
-    const [isFormVisible, setIsFormVisible] = useState(false);
+  const handleMouseEnter = () => {
+    setIsFormVisible(true);
+  };
 
-    const handleMouseEnter = () => {
-      setIsFormVisible(true);
-    };
-
-    return (
-      <div
-        className=" flex flex-col items-center justify-center mx-auto bg-[#ecf0f1] 
+  return (
+    <div
+      className=" flex flex-col items-center justify-center mx-auto bg-[#ecf0f1] 
         mt-[9.83rem]  md:mt-[16.99rem] md:w-auto md:h-[5.5rem] 
         w-[12.9375rem] h-[2.43594rem] "
-        onMouseEnter={handleMouseEnter}
-      >
-        <div className="text-center  font-semibold font-pSans 
+      onMouseEnter={handleMouseEnter}
+    >
+      <div
+        className="text-center  font-semibold font-pSans 
         leading-[1.60169rem] tracking-[0.01356rem] text-[1.35738rem]
         lg:leading-[118%] lg:tracking-[clamp(0.0185rem,2vw,0.03475rem)]
         lg:text-[clamp(1.85188rem,2vw,3.47225rem)]
 
-        ">The Perfect Match!!</div>
-        <div className="text-center font-medium lowercase text-[#ff8312] font-pSans
+        "
+      >
+        The Perfect Match!!
+      </div>
+      <div
+        className="text-center font-medium lowercase text-[#ff8312] font-pSans
         text-[1.05425rem] leading-[1.24406rem] tracking-[0.01056rem]
         lg:leading-[118%] lg:tracking-[clamp(0.01369rem,1.5vw,0.02569rem]
         lg:text-[clamp(1.37038rem,1.5vw,2.56944rem)]
                   
-        ">are you the one?</div>
-        <ContactForm isVisible={isFormVisible} onClose={() => setIsFormVisible(false)} />
+        "
+      >
+        are you the one?
       </div>
-    );
-  };
+      <ContactForm
+        isVisible={isFormVisible}
+        onClose={() => setIsFormVisible(false)}
+      />
+    </div>
+  );
+};
 
-  export default HoverableDiv;
+export default HoverableDiv;
